@@ -1,0 +1,95 @@
+.port{
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .5s ease-out all;
+}
+
+.titlebox{
+    margin-top: -250px;
+    width: 500px;
+    height: 150px;
+}
+
+.titlebox h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 120px;
+    text-align: center;
+    margin-top: 10px;
+    text-shadow: 0px 0px 40px rgb(95, 64, 7);
+}
+
+.release h1{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 60px;
+}
+.release p{
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+body{
+    background:url('vint.png');
+    background-repeat: no-repeat;
+    min-height:100%;
+    background-size:cover;
+    
+}
+
+.simply-countdown {
+    overflow: hidden;
+    display: table;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: -140px;
+}
+.simply-countdown > .simply-section {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    margin: 8px;
+    background-color: rgba(182, 129, 32, 0.425);
+    box-shadow: 0 1px 3px rgb(151, 95, 10), 0 10px 10px rgba(0, 0, 0, 0.24);
+    border-radius: 12px;
+}
+
+.simply-countdown > .simply-section .simply-amount,
+.simply-countdown > .simply-section .simply-word {
+    display: block;
+    text-align: center;
+}
+
+.registro{
+    position: relative;
+    bottom: -168px;
+}
+.registro h3{
+    text-align: center;
+}
+.form{
+    margin-left:10%;
+	margin-right:10%;
+	
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
