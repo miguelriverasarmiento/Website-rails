@@ -4,6 +4,7 @@
     
     </head>
     <body>
+    
     <div class="port">
     <div class="titlebox">
         <h1>Mg Ars</h1>
@@ -16,17 +17,42 @@
 
     <div class="simply-countdown"></div>
 
-    <div class="registro">
+    <div class="registro" id="reg">
+    
         <h3>Obtener album</h3>
-        <form class="form" method="POST">
-            <label>Nombre</label>
-            <input type="name" name="name" placeholder="Nombre"/><br/>
-            <label>Correo</label>
-            <input type="email" name="email" placeholder="Ingresa tu email"/><br/>
-            <button type="submit">Enviar</button>
-        </form>
-    </div>
+        <%= form_for @user, :url => { :action => :create}, html: {class: "form"}, remote: true do |f| %>
+            <%= f.label :nombre %><br>
+            <%= f.text_field :nombre, placeholder: "nombre", id: "nombre" %><br>
+            <%= f.label :email %><br>
+            <%= f.email_field :email, placeholder: "email", id: "email" %><br>
+            <%= f.submit :Enviar %>
+        <% end %>
+        </div>
 
+        <script>
+        $(document).ready(function(){     
+            $(".form").on('submit', function(e){
+                e.preventDefault();
+                var dataForm = $(this).serialize();
+                $.ajax({
+                    type: 'POST',
+                    url: '/',
+                    dataType: 'json',
+                    data: dataForm,
+                    success: function() {
+                        $('#reg').html("<div id='message'></div>");
+                        $('#message').html("<h2>Successfully added</h2>")
+                        .hide()
+                        .fadeIn(1500, function(){
+                            $('#message');
+                        })
+                    }
+                });
+        
+              });
+           });
+        </script>
+        
     <footer>
     MgArs.music 2021 &copy;
     </footer>
