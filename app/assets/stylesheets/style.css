@@ -1,6 +1,6 @@
 .port{
     width: 100%;
-    min-height: 100vh;
+    min-height: 135vh;
     position: fixed;
     top: 0;
     left: 0;
@@ -39,6 +39,10 @@
     text-align: center;
     margin-top: 25px;
 }
+#countdown {
+    display: flex !important;
+    background:rgba(182, 129, 32, 0.425);
+}
 
 body{
     background:url('vint.png');
@@ -48,34 +52,9 @@ body{
     
 }
 
-.simply-countdown {
-    overflow: hidden;
-    display: table;
-    font-family: 'Arial', sans-serif;
-    margin-bottom: -140px;
-}
-.simply-countdown > .simply-section {
-    width: 80px;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    float: left;
-    margin: 8px;
-    background-color: rgba(182, 129, 32, 0.425);
-    box-shadow: 0 1px 3px rgb(151, 95, 10), 0 10px 10px rgba(0, 0, 0, 0.24);
-    border-radius: 12px;
-}
-
-.simply-countdown > .simply-section .simply-amount,
-.simply-countdown > .simply-section .simply-word {
-    display: block;
-    text-align: center;
-}
-
 .registro{
     position: relative;
-    bottom: -168px;
+    bottom: -30px;
     margin-left:10%;
 	margin-right:10%;
 }
@@ -83,9 +62,10 @@ body{
     text-align: center;
 }
 footer{
+    display: block !important;
+    position: relative;
     width: 100%;
     height: 50px;
-    position: absolute;
-    bottom: 0;
+    bottom: -55px;
     left: 0;
 }
