@@ -13,8 +13,7 @@ class HomeController < ApplicationController
             format.json
          end
       end
-   end
-   
+   end   
 private
    def user_params
       params.require(:user).permit(:nombre, :email)

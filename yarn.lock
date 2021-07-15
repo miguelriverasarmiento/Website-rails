@@ -5950,6 +5950,11 @@ simple-swizzle@^0.2.2:
   dependencies:
     is-arrayish "^0.3.1"
 
+simplycountdown.js@^1.7.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/simplycountdown.js/-/simplycountdown.js-1.7.0.tgz#1d70d17df8410485cb437cdc5c59b59d130f7b4b"
+  integrity sha512-UB5LVDVRuVyawYsrosoQ8qOwSdK4JLX8njkmTy5y8ECBQ/h3HGCt6XdYAlMYVHfqQ9egp7dOHZzAjo7+FHYYAw==
+
 snapdragon-node@^2.0.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/snapdragon-node/-/snapdragon-node-2.1.1.tgz#6c175f86ff14bdb0724563e8f3c1b021a286853b"

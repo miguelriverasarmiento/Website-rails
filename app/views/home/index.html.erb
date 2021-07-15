@@ -13,9 +13,35 @@
     <div class="release">
         <h1>Gran lanzamiento</h1>
         <p>Album Homonimo</p>
+        <p>Feb 16, 2022</p>
     </div>
 
-    <div class="simply-countdown"></div>
+    <div id="countdown">
+        
+    </div> 
+
+    <script type="text/javascript">
+    
+    var countDownDate = new Date("Feb 16, 2022 17:30:01").getTime();
+
+    var x = setInterval(function() {
+    var now = new Date().getTime();
+    var distance = countDownDate - now;
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("countdown").innerHTML = days + " days " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("countdown").innerHTML = "EXPIRED";
+    }
+    }, 1000);
+
+    </script>
 
     <div class="registro" id="reg">
     
@@ -58,6 +84,7 @@
     </footer>
 
     </div>
+
 
     </body>
 
